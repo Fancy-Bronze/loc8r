@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const readline = require('readline');
 
+// 아트라스 DB 연결 아이디: myatlasdbuser, 비번: .env
 // const dbURI = 'mongodb://localhost/Loc8r';
 const dbPassword = process.env.MONGODB_PASSWORD;
 const dbURI = `mongodb+srv://myatlasdbuser:${dbPassword}@cluster0.nz2tqrc.mongodb.net/Loc8r`;
