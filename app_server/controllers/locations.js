@@ -5,7 +5,7 @@ const apiOptions = {
 };
 
 if ((process.env.NODE_ENV === 'production')) {
-    apiOptions.server = 'https://loc8r-63jg.onrender.com';
+    apiOptions.server = 'https://extraordinary-stardust-3800ec.netlify.app';
 }
 
 
