@@ -4,7 +4,7 @@
 // };
 const about = function (req, res) {
     res.render('generic-text', {
-        title: 'About Loc8r - by 2025810083 강민준',
+        title: 'About Loc8r Jimo gang',
         content: 'Loc8r was created to help people find places to sit down \
 and get a bit of work done.<br/><br/>Lorem ipsum dolor sit \
 amet, consectetur adipiscing elit. Nunc sed lorem ac nisi digni \
