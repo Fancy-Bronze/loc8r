@@ -1,5 +1,3 @@
-//- 
-
 extends layout
 
 include _includes/sharedHTMLfunctions
@@ -37,7 +35,6 @@ block content
           .card.card-primary
             .card-block
               h2.card-title Location map
-              //- 하나의 코드에서 줄 바꿈 금지! API에서 줄바꿈 많으면 안 받음!
               img.img-fluid.rounded(src=`https://maps.googleapis.com/maps/api/staticmap?center=${location.coords.lat},${location.coords.lng}&zoom=17&size=400x350&sensor=false&markers=${location.coords.lat},${location.coords.lng}&scale=2&key=${process.env.GOOGLE_API_KEY}`)
       .row
         .col-12
@@ -58,7 +55,3 @@ block content
     .col-12.col-lg-3
       p.lead #{location.name} #{sidebar.context}
       p= sidebar.callToAction
-
-  //- span.reviewAuthor #{review.author.displayName}
-  //- small.reviewTimestamp
-

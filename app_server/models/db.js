@@ -1,12 +1,10 @@
 import mongoose from 'mongoose';
 import readline from 'readline';
 
-// 아트라스 DB 연결 아이디: myatlasdbuser, 비번은 .env 사용
-const dbPassword = process.env.MONGODB_PASSWORD;
-const dbURI = `mongodb+srv://myatlasdbuser:${dbPassword}@cluster0.nz2tqrc.mongodb.net/Loc8r`;
+const dbURI = `mongodb+srv://kmj0410:${process.env.MONGODB_PASSWORD}@cluster0.cr2unvv.mongodb.net/Loc8r`;
 
 const connect = () => {
-    console.log("Jimo Gang's 몽고DB 연결")
+    console.log("몽고DB 연결 by 2025810083 강민준")
     setTimeout(() => mongoose.connect(dbURI), 1000);
 };
 
@@ -60,6 +58,5 @@ process.on('SIGTERM', () => {
 });
 
 connect();
-// by 2025810083 강민준
+
 import './locations.js';
-import './users.js'
